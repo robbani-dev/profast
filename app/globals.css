@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: false;
+}
+@plugin "daisyui/theme" {
+  name: "mytheme";
+  default: true; /* set as default */
+  prefersdark: false; /* set as default dark mode (prefers-color-scheme:dark) */
+  color-scheme: light; /* color of browser-provided UI */
+
+  --color-base-100: oklch(0.9418 0.0025 228.79);
+  --color-base-200: oklch(1 0 0);
+  --color-base-300: oklch(0.1496 0 0);
+  --color-base-content: oklch(0.4891 0 0);
+  --color-primary: oklch(0.8899 0.1631 121.47);
+  --color-primary-content: oklch(0.4976 0.0864 121.28);
+  --color-secondary: oklch(70% 0.25 200);
+  --color-secondary-content: oklch(1 0 0);
+  --color-accent: oklch(65% 0.25 160);
+  --color-accent-content: oklch(98% 0.01 160);
+  --color-neutral: oklch(50% 0.05 240);
+  --color-neutral-content: oklch(98% 0.01 240);
+  --color-info: oklch(70% 0.2 220);
+  --color-info-content: oklch(98% 0.01 220);
+  --color-success: oklch(65% 0.25 140);
+  --color-success-content: oklch(98% 0.01 140);
+  --color-warning: oklch(80% 0.25 80);
+  --color-warning-content: oklch(20% 0.05 80);
+  --color-error: oklch(65% 0.3 30);
+  --color-error-content: oklch(98% 0.01 30);
+
+  /* border radius */
+  --radius-selector: 1rem;
+  --radius-field: 0.25rem;
+  --radius-box: 0.5rem;
+
+  /* base sizes */
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+
+  /* border size */
+  --border: 1px;
+
+  /* effects */
+  --depth: 1;
+  --noise: 0;
+}
+
+
+
+.urbanist-font {
+  font-family: "Urbanist", sans-serif;
+}
+
+
+.base-container {
+  @apply w-[95%] mx-auto
+}
+
+.st-container{
+  @apply max-w-360 mx-auto p-4 sm:p-6 lg:py-16 lg:px-14 
+}
+
+.title-section{
+  @apply text-[#03373D] text-2xl sm:text-3xl font-bold text-left mb-4
+}
+
+.title-card{
+  @apply text-xl font-semibold mb-2 text-[#03373D] text-left
+}
+
+.myBarSwiper .swiper-pagination-bullet {
+  width: 30px;
+  height: 4px;
+  background: #d1d5db;
+  opacity: 1;
+  border-radius: 999px;
+  transition: 0.3s;
+}
+
+.myBarSwiper .swiper-pagination-bullet-active {
+  background: #2563eb;
+  width: 45px;
+}
