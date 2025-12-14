@@ -6,6 +6,7 @@ import CompanyMarquee from "./home/CompanyMarquee";
 import Services from "./home/services";
 import Merchant from "./home/Merchant";
 import CustomerSay from "./home/CustomerSay";
+import FAQ from "./home/FAQ";
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
       <CompanyMarquee />
       <Services />
       <Merchant />
-      <CustomerSay/>
+      <CustomerSay />
+      <FAQ />
     </div>
   );
 }
