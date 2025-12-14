@@ -5,16 +5,18 @@ import OurServices from "./home/OurServices";
 import CompanyMarquee from "./home/CompanyMarquee";
 import Services from "./home/services";
 import Merchant from "./home/Merchant";
+import CustomerSay from "./home/CustomerSay";
 
 export default function Home() {
   return (
-    <div>
+    <div className="pb-100">
       <Banner />
       <HowItWorks />
       <OurServices />
       <CompanyMarquee />
       <Services />
       <Merchant />
+      <CustomerSay/>
     </div>
   );
 }
