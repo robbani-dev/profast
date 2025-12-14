@@ -1,6 +1,13 @@
-import Image from 'next/image'
-import React from 'react'
+"use client";
+import Image from 'next/image';
+import React from 'react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
+import "swiper/css";
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 
 const comments = [
     {
@@ -125,52 +132,79 @@ const comments = [
     }
 ];
 
-
-
-
 const CustomerSay = () => {
-    return (
-        <div className='st-container text-center '>
-            <div className='max-w-80 mx-auto mb-4'>
-                <Image src="/images/customerSay.png" alt='customrer say' height={100} width={300} />
-            </div>
+  return (
+    <div className='st-container text-center'>
+      {/* Header Image */}
+      <div className='max-w-80 mx-auto mb-4'>
+        <Image
+          src="/images/customerSay.png"
+          alt='Customer Say'
+          height={100}
+          width={300}
+        />
+      </div>
+
+      {/* Title and Description */}
+      <div>
+        <h1 className='title-section' style={{ textAlign: "center" }}>
+          What our customers are saying
+        </h1>
+        <p>
+          Enhance posture, mobility, and well-being effortlessly with Posture Pro. 
+          Achieve proper alignment, reduce pain, and strengthen your body with ease!
+        </p>
+      </div>
+
+      {/* Swiper Section */}
+      <Swiper
+        className='mySwiper'
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
+        slidesPerView={2}
+        pagination={{ clickable: true }}
+        navigation={true}
+        modules={[Autoplay, Navigation, Pagination]}
+      >
+        {comments.map((commen, index) => (
+          <SwiperSlide
+            key={index}
+            className='bg-base-200 rounded-2xl p-6 m-4 text-left flex flex-col justify-between'
+          >
+            {/* Quote Icon */}
             <div>
-                <h1 className='title-section' style={{ textAlign: "center" }}>What our customers are sayings</h1>
-                <p>Enhance posture, mobility, and well-being effortlessly with Posture Pro. Achieve proper alignment, reduce pain, and strengthen your body with ease!</p>
+              <Image
+                src="/images/quat.png"
+                alt='Quote'
+                height={30}
+                width={30}
+                className='mb-2'
+              />
             </div>
 
+            {/* Comment Text */}
+            <p className='mb-4'>{commen.comment}</p>
 
-            {/* Customizable section */}
+            <div className='border-b-2 border-dashed my-4'></div>
 
-
-
-
-            <div>
-                {
-                    comments.map((commen, index) => {
-
-                        return (
-                            <div key={index} className='max-w-100 bg-base-200 rounded-2xl p-3 md:p-4 my-10 text-left'>
-                                <Image src="/images/quat.png" alt='customrer say' height={30} width={30} className='size-10' />
-                                <p>{commen.comment}</p>
-                                <div className='border-b-2 border-dashed my-4'></div>
-                                <div className='flex gap-4'>
-                                    <div><Image src="/Images/logo.png" alt='a' height={10} width={10} className='rounded-full bg-primary object-cover size-10' /></div>
-                                    <div>
-                                        <h3 className='font-bold text-xl'>{commen.name}</h3>
-                                        <p>{commen.designation}</p>
-                                    </div>
-                                </div>
-                            </div>
-                        )
-
-                    })
-                }
+            {/* User Info */}
+            <div className='flex items-center gap-4'>
+              <Image
+                src={commen.image}
+                alt={commen.name}
+                height={50}
+                width={50}
+                className='rounded-full object-cover'
+              />
+              <div>
+                <h3 className='font-bold text-lg'>{commen.name}</h3>
+                <p className='text-sm text-gray-500'>{commen.designation}</p>
+              </div>
             </div>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
+};
 
-
-        </div>
-    )
-}
-
-export default CustomerSay
+export default CustomerSay;
