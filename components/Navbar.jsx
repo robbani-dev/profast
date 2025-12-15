@@ -1,21 +1,21 @@
 import React from 'react'
 import Logo from './Logo'
 
-const Navbar = () => {
+export const links = <>
+    <li><a>Item 1</a></li>
+    <li>
+        <details>
+            <summary>Parent</summary>
+            <ul className="p-2 bg-base-100 w-40 z-1">
+                <li><a>Submenu 1</a></li>
+                <li><a>Submenu 2</a></li>
+            </ul>
+        </details>
+    </li>
+    <li><a>Item 3</a></li>
+</>
 
-    const links = <>
-        <li><a>Item 1</a></li>
-                    <li>
-                        <details>
-                            <summary>Parent</summary>
-                            <ul className="p-2 bg-base-100 w-40 z-1">
-                                <li><a>Submenu 1</a></li>
-                                <li><a>Submenu 2</a></li>
-                            </ul>
-                        </details>
-                    </li>
-                    <li><a>Item 3</a></li>
-    </>
+const Navbar = () => {
 
     return (
         <div className="navbar bg-base-200 shadow-sm base-container rounded-2xl my-[2%] lg:my-[1%] lg:px-[1%]">
@@ -27,7 +27,7 @@ const Navbar = () => {
                     <ul
                         tabIndex="-1"
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                            {links}
+                        {links}
                     </ul>
                 </div>
                 <a href='/'> <Logo /> </a>

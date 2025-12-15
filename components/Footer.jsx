@@ -1,19 +1,25 @@
 import React from 'react'
 import Logo from './Logo'
+import { links } from './Navbar'
 
 const Footer = () => {
     return (
         <footer className="footer w-[95%] mx-auto rounded-2xl footer-horizontal footer-center bg-[#0B0B0B] text-base-100 p-10">
-            <aside>
+            <aside className='space-y-6'>
                 <a href="/">
                     <Logo />
                 </a>
-                <p className="font-bold">
-                    ACME Industries Ltd.
-                    <br />
-                    Providing reliable tech since 1992
+                <p className="font-bold max-w-200 mx-auto text-center">
+                    Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.
                 </p>
-                <p>Copyright © {new Date().getFullYear()} - All right reserved</p>
+                <div className='border w-full border-dashed border-base-content'></div>
+                <div>
+                    <ul className='flex justify-center gap-6'>
+                        {links}        
+                        {/* Here is a job */}
+                    </ul>
+                </div>
+                <div className='border w-full border-dashed border-base-content'></div>
             </aside>
             <nav>
                 <div className="grid grid-flow-col gap-4">

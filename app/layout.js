@@ -25,8 +25,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased urbanist-font`}
       >
         <Navbar />
-        {children}
-        <Footer/>
+        <div className="min-h-[80vh]">
+          {children}
+        </div>
+        <Footer />
       </body>
     </html>
   );
