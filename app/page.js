@@ -10,7 +10,7 @@ import FAQ from "./home/FAQ";
 
 export default function Home() {
   return (
-    <div className="pb-100">
+    <div>
       <Banner />
       <HowItWorks />
       <OurServices />

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { FaArrowRight } from "react-icons/fa";
 
 
 
@@ -79,7 +79,7 @@ const FAQ = () => {
                     })
                 }
                 <div className='flex justify-center'>
-                    <button className='btn'>Show More</button>
+                    <button className='btn bg-primary text-[#1F1F1F] rounded-xl'>Show More <div className='size-7 bg-[#1F1F1F] rounded-full text-white flex justify-center items-center -rotate-45'><FaArrowRight /> </div> </button>
                 </div>
             </div>
 
