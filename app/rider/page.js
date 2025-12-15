@@ -14,10 +14,19 @@ const Rider = () => {
                     <div>
 
 
-                        
+                        <form className="fieldset">
+                            <label className="label">Email</label>
+                            <input type="email" className="input" placeholder="Email" />
+                            <label className="label">Password</label>
+                            <input type="password" className="input" placeholder="Password" />
+                            <div><a className="link link-hover">Forgot password?</a></div>
+                            <button className="btn btn-neutral mt-4">Login</button>
+                        </form>
+
+
 
                     </div>
-                    <div><Image src="/images/rider.png" alt='Rider driving a bike' width={450} height={450} className='mx-auto'/></div>
+                    <div><Image src="/images/rider.png" alt='Rider driving a bike' width={450} height={450} className='mx-auto' /></div>
                 </div>
             </div>
         </div>
