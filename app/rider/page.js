@@ -136,7 +136,7 @@ const Rider = () => {
                                 )}
                             </div>
 
-                            <input type='submit' className='btn bg-primary text-neutral' />
+                            <input type='submit' className='btn bg-primary text-neutral mt-4' />
 
                         </form>
 

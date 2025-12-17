@@ -3,6 +3,7 @@ import Logo from './Logo'
 
 export const links = <>
     <li><a href='/rider'>Be a Rider</a></li>
+    <li><a href='/pricing'>Pricing</a></li>
     <li>
         <details>
             <summary>Parent</summary>
