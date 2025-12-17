@@ -2,7 +2,7 @@ import React from 'react'
 import Logo from './Logo'
 
 export const links = <>
-    <li><a>Item 1</a></li>
+    <li><a href='/rider'>Be a Rider</a></li>
     <li>
         <details>
             <summary>Parent</summary>
