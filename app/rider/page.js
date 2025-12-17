@@ -14,8 +14,6 @@ const Rider = () => {
                     <div>
 
 
-                        
-
                     </div>
                     <div><Image src="/images/rider.png" alt='Rider driving a bike' width={450} height={450} className='mx-auto'/></div>
                 </div>
