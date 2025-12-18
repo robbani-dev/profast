@@ -24,13 +24,13 @@ const Pricing = () => {
                 <div className='lg:grid grid-cols-2 gap-2'>
 
                     {/* Form start here -----------------------------------------------------------------------------------------------------------------*/}
-                    <div>
+                    <div className='w-3xl flex justify-center items-center'>
                         <form className="fieldset" onSubmit={handleSubmit(manageSubmit)}>
 
                             <div className='flex gap-4'>
 
                                 <button className='btn text-neutral w-40'>Reset</button>
-                                <button className='btn text-neutral bg-primary w-full'>Calculate</button>
+                                <button className='btn text-neutral bg-primary w-60'>Calculate</button>
                             </div>
 
                         </form>
