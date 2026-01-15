@@ -17,7 +17,7 @@ export default function CompanyMarquee() {
         <section className="py-8 max-w-360 mx-auto">
             <div>
                 <h1 style={{textAlign:"center"}} className="title-card pb-4">
-                    We've helped thousands of sales teams
+                    We&apos;ve helped thousands of sales teams
                 </h1>
             </div>
             <div className="overflow-hidden relative">

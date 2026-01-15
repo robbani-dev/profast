@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import Logo from './Logo'
 import { links } from './Navbar'
 
@@ -6,9 +7,9 @@ const Footer = () => {
     return (
         <footer className="footer w-[95%] mx-auto rounded-2xl footer-horizontal footer-center bg-[#0B0B0B] text-base-100 p-10">
             <aside className='space-y-6'>
-                <a href="/">
+                <Link href="/">
                     <Logo />
-                </a>
+                </Link>
                 <p className="font-bold max-w-200 mx-auto text-center">
                     Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to business shipments — we deliver on time, every time.
                 </p>

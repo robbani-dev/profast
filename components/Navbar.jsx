@@ -1,9 +1,10 @@
 import React from 'react'
+import Link from 'next/link'
 import Logo from './Logo'
 
 export const links = <>
-    <li><a href='/rider'>Be a Rider</a></li>
-    <li><a href='/pricing'>Pricing</a></li>
+    <li><Link href='/rider'>Be a Rider</Link></li>
+    <li><Link href='/pricing'>Pricing</Link></li>
     <li>
         <details>
             <summary>Parent</summary>
@@ -31,7 +32,7 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a href='/'> <Logo /> </a>
+                <Link href='/'> <Logo /> </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -45,4 +46,4 @@ const Navbar = () => {
     )
 }
 
-export default Navbar
+export default Navbar 
