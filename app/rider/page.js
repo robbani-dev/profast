@@ -32,10 +32,10 @@ const Rider = () => {
 
                                 {/* Name */}
                                 <div>
-                                    <label className="c-label">Your Name</label>
+                                    <label className="label">Your Name</label>
                                     <input
                                         {...register("name", { required: true })}
-                                        className='c-input'
+                                        className='input'
                                         type='text'
                                         placeholder='Your Name'
                                     />
@@ -48,10 +48,10 @@ const Rider = () => {
 
                                 {/* Age */}
                                 <div>
-                                    <label className="c-label">Your age</label>
+                                    <label className="label">Your age</label>
                                     <input
                                         {...register("age", { min: 18, max: 60, required: true })}
-                                        className='c-input'
+                                        className='input'
                                         type='number'
                                         placeholder='Your age'
                                     />
@@ -69,10 +69,10 @@ const Rider = () => {
 
                                 {/* Email */}
                                 <div>
-                                    <label className="c-label">Your email</label>
+                                    <label className="label">Your email</label>
                                     <input
                                         {...register("email", { required: true })}
-                                        className='c-input'
+                                        className='input'
                                         type='email'
                                         placeholder='Email'
                                     />
@@ -85,10 +85,10 @@ const Rider = () => {
 
                                 {/* Region */}
                                 <div>
-                                    <label className="c-label">Your Region</label>
+                                    <label className="label">Your Region</label>
                                     <select
                                         {...register("region", { required: "Region is required" })}
-                                        className={`select c-input ${errors.region ? "border-error" : ""}`}
+                                        className={`select input ${errors.region ? "border-error" : ""}`}
                                         defaultValue=""
                                     >
                                         <option value="" disabled>Select your region</option>
@@ -108,10 +108,10 @@ const Rider = () => {
 
                                 {/* NID */}
                                 <div>
-                                    <label className="c-label">NID No</label>
+                                    <label className="label">NID No</label>
                                     <input
                                         {...register("nid", { required: true })}
-                                        className='c-input'
+                                        className='input'
                                         type='number'
                                         placeholder='NID No'
                                     />
@@ -124,10 +124,10 @@ const Rider = () => {
 
                                 {/* Contact */}
                                 <div>
-                                    <label className="c-label">Contact No</label>
+                                    <label className="label">Contact No</label>
                                     <input
                                         {...register("contact", { required: true })}
-                                        className='c-input'
+                                        className='input'
                                         type='number'
                                         placeholder='Contact No'
                                     />
@@ -141,10 +141,10 @@ const Rider = () => {
 
                             {/* Wire house */}
                             <div>
-                                <label className="c-label">Which wire-house you want to work?</label>
+                                <label className="label">Which wire-house you want to work?</label>
                                 <select
                                     {...register("wireHouse", { required: "Wire-house is required" })}
-                                    className={`select c-input ${errors.wireHouse ? "border-error" : ""}`}
+                                    className={`select input ${errors.wireHouse ? "border-error" : ""}`}
                                     defaultValue=""
                                 >
                                     <option value="" disabled>Select wire-house</option>

@@ -7,6 +7,7 @@ export const links = <>
     <li><Link href='/pricing'>Pricing</Link></li>
     <li><Link href='/aboutUs'>About Us</Link></li>
     <li><Link href='/consignment'>Track Order</Link></li>
+    <li><Link href='/addParcel'>Add Parcel</Link></li>
     <li>
         <details>
             <summary>Parent</summary>
