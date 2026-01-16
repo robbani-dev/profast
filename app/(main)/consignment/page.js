@@ -1,12 +1,14 @@
 import { Search } from 'lucide-react'
-import Image from 'next/image'
 import React from 'react'
 
-const ServiceArea = () => {
+const Consignment = () => {
     return (
-        <div className='st-container bg-base-200 rounded-2xl '>
+        <div className='st-container bg-base-200 rounded-2xl py-20'>
             <div className='flex flex-col gap-12'>
-                <h1 className='title-section'>We are available in 64 districts</h1>
+                <div className='flex flex-col gap-4'>
+                    <h1 className='title-section'>Track Your Consignment</h1>
+                    <p>Now you can easily track your consignment</p>
+                </div>
                 <div className="w-full max-w-2xl">
                     <div className="flex items-center bg-base-100 rounded-full pl-5 ">
 
@@ -26,22 +28,20 @@ const ServiceArea = () => {
                         </button>
                     </div>
                 </div>
-                <div className="relative w-full h-106.5">
-                    <Image
-                        src="/images/map.png"
-                        alt="Service Area Map"
-                        fill
-                        className="object-cover"
-                    />
-                </div>
             </div>
             {/* bar */}
             <div className='h-bar'></div>
-            <div className='flex flex-col gap-12'>
-                <h3 className='title-card'>We deliver almost all over Bangladesh.</h3>
+
+            <div className='grid md:grid-cols-2 gap-6'>
+                <div className='bg-base-100 rounded-[50px] p-12'>
+                    <h3 className='title-card'>Product Details</h3>
+                </div>
+                <div className='bg-base-100 rounded-[50px] p-12'>
+                    <h3 className='title-card'>Tracking Updates</h3>
+                </div>
             </div>
         </div>
     )
 }
 
-export default ServiceArea
+export default Consignment

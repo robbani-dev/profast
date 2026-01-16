@@ -9,7 +9,7 @@ const Pricing = () => {
     const manageSubmit = (data) => console.log(data)
 
     return (
-        <div className='st-container  bg-base-200 rounded-2xl'>
+        <div className='st-container  bg-base-200 rounded-2xl py-20'>
             <div>
                 <div>
                     <h1 className='title-section'>Pricing Calculator</h1>

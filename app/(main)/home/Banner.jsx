@@ -46,7 +46,7 @@ export default function Banner() {
   ];
 
   return (
-    <div className="base-container rounded-2xl bg-linear-to-r from-base-200 via-base-200 to-primary p-4 md:p-15">
+    <div className="base-container rounded-2xl bg-linear-to-r from-base-200 via-base-200 to-primary p-4 md:p-15 overflow-hidden">
       <Swiper
         modules={[EffectCube, Pagination, Autoplay]}
         effect="cube"

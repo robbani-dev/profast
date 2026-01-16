@@ -12,7 +12,7 @@ const Rider = () => {
     }
 
     return (
-        <div className='st-container bg-base-200 rounded-2xl'>
+        <div className='st-container bg-base-200 rounded-2xl py-20'>
             <div>
                 <div>
                     <h1 className='title-section'>Be a Rider</h1>

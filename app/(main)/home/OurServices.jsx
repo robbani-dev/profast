@@ -37,14 +37,20 @@ const services = [
 
 export default function OurServices() {
   return (
-    <section className="bg-[#03373D] st-container rounded-2xl ">
-      <div>
-        <h2 style={{color: "white"}} className="title-section">Our Services</h2>
-        <p className="mb-12 text-secondary-content">
-          Explore the range of services we offer to make your delivery experience smooth and reliable.
-        </p>
+    <section className="bg-[#03373D] st-container rounded-2xl">
+      <div className=" flex flex-col gap-8 py-20">
+        <div className="text-center md:max-w-1/2 mx-auto flex flex-col gap-4">
+          <h2 style={{ color: "white" }} className="title-section">
+            Our Services
+          </h2>
+          <p className="mb-12 text-secondary-content">
+            Enjoy fast, reliable parcel delivery with real-time tracking and
+            zero hassle. From personal packages to business shipments — we
+            deliver on time, every time.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
               key={index}

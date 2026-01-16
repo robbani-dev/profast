@@ -6,7 +6,7 @@ const addParcel = () => {
   const [value, setValue] = useState("Document");
 
   return (
-    <div className='st-container bg-base-200 rounded-2xl'>
+    <div className='st-container bg-base-200 rounded-2xl py-20'>
       <div>
         <h1 className='title-section'>Add Parcel</h1>
       </div>
