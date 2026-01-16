@@ -12,8 +12,8 @@ const Rider = () => {
     }
 
     return (
-        <div className='st-container'>
-            <div className='st-container bg-base-200 rounded-2xl'>
+        <div className='st-container bg-base-200 rounded-2xl'>
+            <div>
                 <div>
                     <h1 className='title-section'>Be a Rider</h1>
                     <p className='lg:max-w-[50%]'>
@@ -22,7 +22,7 @@ const Rider = () => {
                     </p>
                 </div>
 
-                <div className='w-full border my-8'></div>
+                <div className='h-bar'></div>
 
                 <div className='lg:grid grid-cols-2 gap-2'>
                     {/* Form start */}

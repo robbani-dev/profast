@@ -63,17 +63,21 @@
 .base-container {
   @apply w-[95%] mx-auto
 }
-
+ 
 .st-container {
   @apply max-w-360 mx-auto p-4 sm:p-6 lg:py-16 lg:px-14
 }
 
 .title-section {
-  @apply text-[#03373D] text-2xl sm:text-3xl font-bold text-left mb-4
+  @apply text-[#03373D] text-2xl sm:text-3xl md:text-4xl font-extrabold text-left mb-4
 }
 
 .title-card {
-  @apply text-xl font-semibold mb-2 text-[#03373D] text-left
+  @apply text-[28px] font-extrabold mb-2 text-[#03373D] text-left
+}
+
+.h-bar {
+  @apply w-full border-t border-[#ccc] my-12
 }
 
 .c-input {

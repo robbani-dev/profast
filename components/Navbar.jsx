@@ -5,6 +5,8 @@ import Logo from './Logo'
 export const links = <>
     <li><Link href='/rider'>Be a Rider</Link></li>
     <li><Link href='/pricing'>Pricing</Link></li>
+    <li><Link href='/aboutUs'>About Us</Link></li>
+    <li><Link href='/consignment'>Track Order</Link></li>
     <li>
         <details>
             <summary>Parent</summary>
@@ -20,7 +22,7 @@ export const links = <>
 const Navbar = () => {
 
     return (
-        <div className="navbar bg-base-200 shadow-sm base-container rounded-2xl my-[2%] lg:my-[1%] lg:px-[1%]">
+        <div className="navbar bg-base-200 shadow-sm base-container rounded-2xl mt-[2%] lg:mt-[1%] lg:px-[1%]">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
