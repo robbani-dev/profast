@@ -8,7 +8,8 @@ export const links = <>
     <li><Link href='/aboutUs'>About Us</Link></li>
     <li><Link href='/consignment'>Track Order</Link></li>
     <li><Link href='/addParcel'>Add Parcel</Link></li>
-    <li>
+    <li><Link href='/serviceArea'>Service Area</Link></li>
+    {/* <li>
         <details>
             <summary>Parent</summary>
             <ul className="p-2 bg-base-100 w-40 z-1">
@@ -17,7 +18,7 @@ export const links = <>
             </ul>
         </details>
     </li>
-    <li><a>Item 3</a></li>
+    <li><a>Item 3</a></li> */}
 </>
 
 const Navbar = () => {
