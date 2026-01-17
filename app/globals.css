@@ -94,6 +94,10 @@
   @apply checkbox checkbox-primary border-4 size-5
 }
 
+.link {
+  @apply text-[#8FA748] no-underline hover:underline
+}
+
 
 
 

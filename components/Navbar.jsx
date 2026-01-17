@@ -22,12 +22,24 @@ const NavLink = ({ href, children }) => {
 
 export const links = (
   <>
-    <li><NavLink href="/rider">Be a Rider</NavLink></li>
-    <li><NavLink href="/pricing">Pricing</NavLink></li>
-    <li><NavLink href="/aboutUs">About Us</NavLink></li>
-    <li><NavLink href="/consignment">Track Order</NavLink></li>
-    <li><NavLink href="/addParcel">Add Parcel</NavLink></li>
-    <li><NavLink href="/serviceArea">Service Area</NavLink></li>
+    <li>
+      <NavLink href="/rider">Be a Rider</NavLink>
+    </li>
+    <li>
+      <NavLink href="/pricing">Pricing</NavLink>
+    </li>
+    <li>
+      <NavLink href="/aboutUs">About Us</NavLink>
+    </li>
+    <li>
+      <NavLink href="/consignment">Track Order</NavLink>
+    </li>
+    <li>
+      <NavLink href="/addParcel">Add Parcel</NavLink>
+    </li>
+    <li>
+      <NavLink href="/serviceArea">Service Area</NavLink>
+    </li>
   </>
 );
 
@@ -72,16 +84,16 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link href="/">
-          {" "}
-          <Logo />{" "}
-        </Link>
+        <Logo />
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Button</a>
+        <Link href="/authentication/login" className="btn btn-primary">
+          {" "}
+          Login{" "}
+        </Link>
       </div>
     </div>
   );
